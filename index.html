@@ -1,9 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-	<title>KLIUCHUK VADIM</title>
+    <meta charset="UTF-8">
+    <title>KLIUCHUK VADIM - Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 900px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .certificate {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        code {
+            background-color: #eef;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body>
+
+<header>
+    <h1>Git — система контролю версій</h1>
+    <p>Підготував: Kliuchuk Vadim</p>
+</header>
+
+<section>
+    <h2>Що таке система контролю версій?</h2>
+    <p>
+        Система контролю версій (VCS) — це програмне забезпечення, яке допомагає відстежувати зміни в коді, документах та інших файлах проєкту.
+        Вона дозволяє зберігати історію змін, співпрацювати з командою та повертатися до попередніх версій при необхідності.
+    </p>
+    <p>
+        <strong>Git</strong> — це найпопулярніша сучасна система контролю версій, розроблена Лінусом Торвальдсом у 2005 році. Git є розподіленою системою, що забезпечує надійність та високу продуктивність.
+    </p>
+</section>
+
+<section>
+    <h2>Переваги Git</h2>
+    <ul>
+        <li>Розподілена архітектура — кожен розробник має повну копію репозиторію.</li>
+        <li>Швидке перемикання між версіями та гілками.</li>
+        <li>Можливість паралельної роботи над проєктом у команді.</li>
+        <li>Висока швидкість виконання операцій.</li>
+        <li>Безкоштовний та з відкритим кодом.</li>
+        <li>Широка підтримка онлайн-сервісів, таких як GitHub, GitLab, Bitbucket.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>10 базових команд Git</h2>
+    <ol>
+        <li><code>git init</code> — створити новий Git-репозиторій у поточній папці.</li>
+        <li><code>git clone [url]</code> — клонувати існуючий репозиторій з віддаленого сервера.</li>
+        <li><code>git status</code> — перевірити статус файлів у репозиторії.</li>
+        <li><code>git add [файл]</code> — додати зміни у файл до індексу (стейджинг).</li>
+        <li><code>git commit -m "повідомлення"</code> — зафіксувати зміни з коментарем.</li>
+        <li><code>git push</code> — відправити зміни у віддалений репозиторій.</li>
+        <li><code>git pull</code> — отримати зміни з віддаленого репозиторію та об’єднати з локальними.</li>
+        <li><code>git log</code> — перегляд історії комітів.</li>
+        <li><code>git branch</code> — перегляд або створення нових гілок.</li>
+        <li><code>git merge [гілка]</code> — об’єднати іншу гілку з поточною.</li>
+    </ol>
+</section>
+
+<section class="certificate">
+    <h2>Сертифікат курсу по Git</h2>
+    <p>Приклад сертифіката після проходження курсу:</p>
+    <img src="https://www.freecodecamp.org/news/content/images/2022/11/git-certificate.png" alt="Git Certificate Example">
+</section>
+
+<section>
+    <h2>Джерела інформації</h2>
+    <ul>
+        <li><a href="https://git-scm.com" target="_blank">Офіційний сайт Git</a></li>
+        <li><a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/" target="_blank">FreeCodeCamp: Основи Git</a></li>
+        <li><a href="https://learngitbranching.js.org/" target="_blank">Інтерактивне навчання Git-гілкам</a></li>
+        <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Kliuchuk Vadim. Всі права захищені.</p>
+</footer>
 
 </body>
 </html>
