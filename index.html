@@ -1,132 +1,143 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>KLIUCHUK VADIM - Git</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 20px;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Операційна система GNU/Linux</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #24292e;
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-        }
+    header {
+      background-color: #2e3d49;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        h1, h2 {
-            color: #2c3e50;
-        }
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+    }
 
-        section {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 8px;
-            max-width: 900px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+    h2 {
+      color: #2e3d49;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
 
-        .certificate {
-            text-align: center;
-            margin-top: 20px;
-        }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      border-left: 4px solid #2e3d49;
+    }
 
-        .certificate img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
+    footer {
+      background-color: #2e3d49;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
 
-        footer {
-            text-align: center;
-            margin: 40px 0 0;
-            font-size: 14px;
-            color: #777;
-        }
+    a {
+      color: #1a73e8;
+    }
 
-        code {
-            background-color: #eef;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-    </style>
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      font-family: monospace;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Git вЂ” СЃРёСЃС‚РµРјР° РєРѕРЅС‚СЂРѕР»СЋ РІРµСЂСЃС–Р№</h1>
-    <p>РџС–РґРіРѕС‚СѓРІР°РІ: Kliuchuk Vadim</p>
-</header>
+  <header>
+    <h1>Операційна система GNU/Linux</h1>
+  </header>
 
-<section>
-    <h2>Р©Рѕ С‚Р°РєРµ СЃРёСЃС‚РµРјР° РєРѕРЅС‚СЂРѕР»СЋ РІРµСЂСЃС–Р№?</h2>
-    <p>
-        РЎРёСЃС‚РµРјР° РєРѕРЅС‚СЂРѕР»СЋ РІРµСЂСЃС–Р№ (VCS) вЂ” С†Рµ РїСЂРѕРіСЂР°РјРЅРµ Р·Р°Р±РµР·РїРµС‡РµРЅРЅСЏ, СЏРєРµ РґРѕРїРѕРјР°РіР°С” РІС–РґСЃС‚РµР¶СѓРІР°С‚Рё Р·РјС–РЅРё РІ РєРѕРґС–, РґРѕРєСѓРјРµРЅС‚Р°С… С‚Р° С–РЅС€РёС… С„Р°Р№Р»Р°С… РїСЂРѕС”РєС‚Сѓ.
-        Р’РѕРЅР° РґРѕР·РІРѕР»СЏС” Р·Р±РµСЂС–РіР°С‚Рё С–СЃС‚РѕСЂС–СЋ Р·РјС–РЅ, СЃРїС–РІРїСЂР°С†СЋРІР°С‚Рё Р· РєРѕРјР°РЅРґРѕСЋ С‚Р° РїРѕРІРµСЂС‚Р°С‚РёСЃСЏ РґРѕ РїРѕРїРµСЂРµРґРЅС–С… РІРµСЂСЃС–Р№ РїСЂРё РЅРµРѕР±С…С–РґРЅРѕСЃС‚С–.
-    </p>
-    <p>
-        <strong>Git</strong> вЂ” С†Рµ РЅР°Р№РїРѕРїСѓР»СЏСЂРЅС–С€Р° СЃСѓС‡Р°СЃРЅР° СЃРёСЃС‚РµРјР° РєРѕРЅС‚СЂРѕР»СЋ РІРµСЂСЃС–Р№, СЂРѕР·СЂРѕР±Р»РµРЅР° Р›С–РЅСѓСЃРѕРј РўРѕСЂРІР°Р»СЊРґСЃРѕРј Сѓ 2005 СЂРѕС†С–. Git С” СЂРѕР·РїРѕРґС–Р»РµРЅРѕСЋ СЃРёСЃС‚РµРјРѕСЋ, С‰Рѕ Р·Р°Р±РµР·РїРµС‡СѓС” РЅР°РґС–Р№РЅС–СЃС‚СЊ С‚Р° РІРёСЃРѕРєСѓ РїСЂРѕРґСѓРєС‚РёРІРЅС–СЃС‚СЊ.
-    </p>
-</section>
+  <main>
+    <section>
+      <h2>Коротка інформація</h2>
+      <p><strong>GNU/Linux</strong> — це вільна та відкрита операційна система, яка базується на ядрі Linux та інструментах GNU. Вона відома своєю стабільністю, безпекою та гнучкістю. Часто використовується на серверах, робочих станціях, мобільних пристроях (Android) і вбудованих системах.</p>
+    </section>
 
-<section>
-    <h2>РџРµСЂРµРІР°РіРё Git</h2>
-    <ul>
-        <li>Р РѕР·РїРѕРґС–Р»РµРЅР° Р°СЂС…С–С‚РµРєС‚СѓСЂР° вЂ” РєРѕР¶РµРЅ СЂРѕР·СЂРѕР±РЅРёРє РјР°С” РїРѕРІРЅСѓ РєРѕРїС–СЋ СЂРµРїРѕР·РёС‚РѕСЂС–СЋ.</li>
-        <li>РЁРІРёРґРєРµ РїРµСЂРµРјРёРєР°РЅРЅСЏ РјС–Р¶ РІРµСЂСЃС–СЏРјРё С‚Р° РіС–Р»РєР°РјРё.</li>
-        <li>РњРѕР¶Р»РёРІС–СЃС‚СЊ РїР°СЂР°Р»РµР»СЊРЅРѕС— СЂРѕР±РѕС‚Рё РЅР°Рґ РїСЂРѕС”РєС‚РѕРј Сѓ РєРѕРјР°РЅРґС–.</li>
-        <li>Р’РёСЃРѕРєР° С€РІРёРґРєС–СЃС‚СЊ РІРёРєРѕРЅР°РЅРЅСЏ РѕРїРµСЂР°С†С–Р№.</li>
-        <li>Р‘РµР·РєРѕС€С‚РѕРІРЅРёР№ С‚Р° Р· РІС–РґРєСЂРёС‚РёРј РєРѕРґРѕРј.</li>
-        <li>РЁРёСЂРѕРєР° РїС–РґС‚СЂРёРјРєР° РѕРЅР»Р°Р№РЅ-СЃРµСЂРІС–СЃС–РІ, С‚Р°РєРёС… СЏРє GitHub, GitLab, Bitbucket.</li>
-    </ul>
-</section>
+    <section>
+      <h2>Популярні дистрибутиви Linux</h2>
+      <ul>
+        <li>Ubuntu</li>
+        <li>Debian</li>
+        <li>Fedora</li>
+        <li>Arch Linux</li>
+        <li>Linux Mint</li>
+        <li>Manjaro</li>
+        <li>openSUSE</li>
+        <li>CentOS (або AlmaLinux / Rocky Linux)</li>
+      </ul>
+    </section>
 
-<section>
-    <h2>10 Р±Р°Р·РѕРІРёС… РєРѕРјР°РЅРґ Git</h2>
-    <ol>
-        <li><code>git init</code> вЂ” СЃС‚РІРѕСЂРёС‚Рё РЅРѕРІРёР№ Git-СЂРµРїРѕР·РёС‚РѕСЂС–Р№ Сѓ РїРѕС‚РѕС‡РЅС–Р№ РїР°РїС†С–.</li>
-        <li><code>git clone [url]</code> вЂ” РєР»РѕРЅСѓРІР°С‚Рё С–СЃРЅСѓСЋС‡РёР№ СЂРµРїРѕР·РёС‚РѕСЂС–Р№ Р· РІС–РґРґР°Р»РµРЅРѕРіРѕ СЃРµСЂРІРµСЂР°.</li>
-        <li><code>git status</code> вЂ” РїРµСЂРµРІС–СЂРёС‚Рё СЃС‚Р°С‚СѓСЃ С„Р°Р№Р»С–РІ Сѓ СЂРµРїРѕР·РёС‚РѕСЂС–С—.</li>
-        <li><code>git add [С„Р°Р№Р»]</code> вЂ” РґРѕРґР°С‚Рё Р·РјС–РЅРё Сѓ С„Р°Р№Р» РґРѕ С–РЅРґРµРєСЃСѓ (СЃС‚РµР№РґР¶РёРЅРі).</li>
-        <li><code>git commit -m "РїРѕРІС–РґРѕРјР»РµРЅРЅСЏ"</code> вЂ” Р·Р°С„С–РєСЃСѓРІР°С‚Рё Р·РјС–РЅРё Р· РєРѕРјРµРЅС‚Р°СЂРµРј.</li>
-        <li><code>git push</code> вЂ” РІС–РґРїСЂР°РІРёС‚Рё Р·РјС–РЅРё Сѓ РІС–РґРґР°Р»РµРЅРёР№ СЂРµРїРѕР·РёС‚РѕСЂС–Р№.</li>
-        <li><code>git pull</code> вЂ” РѕС‚СЂРёРјР°С‚Рё Р·РјС–РЅРё Р· РІС–РґРґР°Р»РµРЅРѕРіРѕ СЂРµРїРѕР·РёС‚РѕСЂС–СЋ С‚Р° РѕР±вЂ™С”РґРЅР°С‚Рё Р· Р»РѕРєР°Р»СЊРЅРёРјРё.</li>
-        <li><code>git log</code> вЂ” РїРµСЂРµРіР»СЏРґ С–СЃС‚РѕСЂС–С— РєРѕРјС–С‚С–РІ.</li>
-        <li><code>git branch</code> вЂ” РїРµСЂРµРіР»СЏРґ Р°Р±Рѕ СЃС‚РІРѕСЂРµРЅРЅСЏ РЅРѕРІРёС… РіС–Р»РѕРє.</li>
-        <li><code>git merge [РіС–Р»РєР°]</code> вЂ” РѕР±вЂ™С”РґРЅР°С‚Рё С–РЅС€Сѓ РіС–Р»РєСѓ Р· РїРѕС‚РѕС‡РЅРѕСЋ.</li>
-    </ol>
-</section>
+    <section>
+      <h2>Приклади команд Linux CLI</h2>
+      <pre><code>pwd        # показати поточну директорію
+echo "Привіт"   # вивести повідомлення
+ls         # перелік файлів у директорії
+cd /home   # перейти до директорії /home
+touch file.txt   # створити новий файл
+mkdir my_folder  # створити нову папку
+cp file1.txt copy.txt   # копіювати файл
+mv oldname.txt newname.txt   # перейменувати/перемістити файл
+rm file.txt     # видалити файл
+history         # показати історію команд</code></pre>
+    </section>
 
-<section class="certificate">
-    <h2>РЎРµСЂС‚РёС„С–РєР°С‚ РєСѓСЂСЃСѓ РїРѕ Git</h2>
-    <p>РџСЂРёРєР»Р°Рґ СЃРµСЂС‚РёС„С–РєР°С‚Р° РїС–СЃР»СЏ РїСЂРѕС…РѕРґР¶РµРЅРЅСЏ РєСѓСЂСЃСѓ:</p>
-    <img src="https://www.freecodecamp.org/news/content/images/2022/11/git-certificate.png" alt="Git Certificate Example">
-</section>
+    <section>
+      <h2>BASH-скрипт авторизації</h2>
+      <pre><code>#!/bin/bash
 
-<section>
-    <h2>Р”Р¶РµСЂРµР»Р° С–РЅС„РѕСЂРјР°С†С–С—</h2>
-    <ul>
-        <li><a href="https://git-scm.com" target="_blank">РћС„С–С†С–Р№РЅРёР№ СЃР°Р№С‚ Git</a></li>
-        <li><a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/" target="_blank">FreeCodeCamp: РћСЃРЅРѕРІРё Git</a></li>
-        <li><a href="https://learngitbranching.js.org/" target="_blank">Р†РЅС‚РµСЂР°РєС‚РёРІРЅРµ РЅР°РІС‡Р°РЅРЅСЏ Git-РіС–Р»РєР°Рј</a></li>
-        <li><a href="https://www.atlassian.com/git/tutorials" target="_blank">Atlassian Git Tutorials</a></li>
-    </ul>
-</section>
+correct_user="admin"
+correct_pass="12345"
 
-<footer>
-    <p>&copy; 2025 Kliuchuk Vadim. Р’СЃС– РїСЂР°РІР° Р·Р°С…РёС‰РµРЅС–.</p>
-</footer>
+read -p "Введіть логін: " username
+read -s -p "Введіть пароль: " password
+echo ""
+
+if [[ "$username" == "$correct_user" && "$password" == "$correct_pass" ]]; then
+  echo "Авторизація успішна. Ласкаво просимо, $username!"
+else
+  echo "Помилка: неправильний логін або пароль."
+fi</code></pre>
+    </section>
+
+    <section>
+      <h2>Джерела інформації</h2>
+      <ul>
+        <li><a href="https://uk.wikipedia.org/wiki/Linux" target="_blank">Wikipedia: Linux</a></li>
+        <li><a href="https://linux.org/" target="_blank">linux.org</a></li>
+        <li><a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html" target="_blank">Bash Beginner’s Guide</a></li>
+        <li><a href="https://ubuntu.com/" target="_blank">Ubuntu</a></li>
+        <li><a href="https://man7.org/linux/man-pages/" target="_blank">man pages</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Веб-сторінка про GNU/Linux</p>
+  </footer>
 
 </body>
 </html>
